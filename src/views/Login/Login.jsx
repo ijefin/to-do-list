@@ -9,13 +9,25 @@ export const Login = () => {
         <div className="form-image">
           <img src={todo} />
         </div>
+
+        <hr />
+
         <div className="login-form">
           <form>
             <h1>Entrar</h1>
-            <label>Login</label>
-            <input type="text" />
-            <label>Senha</label>
-            <input type="password" />
+            <label>
+              <span>Login</span>
+            </label>
+            <input
+              className="user"
+              placeholder="user@example.com"
+              type="text"
+            />
+            <label>
+              <span>Senha</span>
+            </label>
+            <input className="user" placeholder="*******" type="password" />
+            <input className="submit" type="submit" />
           </form>
         </div>
       </div>

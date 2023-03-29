@@ -1,12 +1,17 @@
 .main-login-card {
-  background-color: #cfe0fa;
   width: 120vh;
   height: 80vh;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .form-image img {
@@ -14,16 +19,19 @@
   border-bottom-left-radius: 20px;
 }
 
+hr {
+  display: none;
+}
+
 .login-form {
   height: 47%;
   width: 25%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  background-color: #416ce3;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.467) 2.4px 2.4px 3.2px;
+  border-left: 2px solid #0c3cc16d;
 }
 
 form {
@@ -33,11 +41,22 @@ form {
   flex-direction: column;
 }
 
-form input {
+.user {
   outline: none;
   padding: 5px;
   border-radius: 2px;
   border: none;
+  margin-top: 5px;
+}
+
+.submit {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 7px;
+  background-color: #344fa0;
+  color: #fff;
   margin-top: 5px;
 }
 
@@ -49,5 +68,25 @@ form label {
   .main-login-card {
     width: 40vh;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-image img {
+    width: 100%;
+  }
+
+  hr {
+    display: flex;
+    margin-top: -20%;
+    border: none;
+    background-color: #0c3cc16d;
+    width: 300px;
+    padding: 1px;
+  }
+
+  .login-form {
+    border: none;
+    margin-top: -40%;
   }
 }
