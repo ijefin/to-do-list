@@ -67,7 +67,7 @@ form {
   outline: none;
   width: 30vh;
   height: 35px;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
 }
 
@@ -88,6 +88,15 @@ form {
     height: 85vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  form {
+    margin-top: 30px;
+  }
+
+  h1 {
+    text-align: center;
   }
 
   .form-image img {
@@ -96,11 +105,11 @@ form {
 
   hr {
     display: flex;
-    margin-top: -20%;
     border: none;
     background-color: #0c3cc16d;
     width: 30vh;
     padding: 1px;
+    margin-bottom: 10%;
   }
 
   .login-form {

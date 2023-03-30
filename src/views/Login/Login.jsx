@@ -10,8 +10,6 @@ export const Login = () => {
           <img src={todo} />
         </div>
 
-        <hr />
-
         <div className="login-form">
           <form>
             <h1 className="sign-in">Entrar</h1>
@@ -32,6 +30,7 @@ export const Login = () => {
               <input className="user" placeholder="*******" type="password" />
             </div>
             <input className="submit" type="submit" />
+            <a href="">Esqueci minha senha</a>
             <a href="">Ainda não possui conta? Cadastre-se!</a>
           </form>
         </div>
