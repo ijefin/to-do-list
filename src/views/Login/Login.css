@@ -1,6 +1,7 @@
 .main-login-card {
-  width: 120vh;
-  height: 80vh;
+  width: auto;
+  height: auto;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
   display: flex;
@@ -34,33 +35,55 @@
 a {
   text-align: center;
   color: #fff;
-  margin-top: 5px;
-}
-
-hr {
-  display: none;
+  margin-top: 10px;
 }
 
 .login-form {
-  height: 47%;
-  width: 25%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-left: 2px solid #0c3cc16d;
-  padding: 20px;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
-form {
+.login-form label {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+
+.login-form .label-text {
+  margin-bottom: 5px;
+}
+
+.login-form input,
+button {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.login-form button {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #344fa0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.login-form button {
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+form .inputs {
   display: flex;
   flex-direction: column;
-  text-align: start;
-}
-
-.login-input {
-  margin-bottom: 10px;
+  align-items: center;
 }
 
 .user {
